@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
                       height: 20,
                     ),
                     Container(
-                      height: 350,
+                      height: 250,
                       width: Get.size.width,
                       child: Stack(
                         children: [
@@ -75,7 +75,7 @@ class Home extends StatelessWidget {
                             ),
                           ),
                           Positioned(
-                            bottom: 130,
+                            bottom: 25,
                             right: 30,
                             left: 30,
                             child: Container(
@@ -107,12 +107,15 @@ class Home extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const Text(
-                      "Community",
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w300,
-                          color: Colors.white),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(0, 100, 0, 0),
+                      child: Text(
+                        "Community",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.white),
+                      ),
                     ),
                     const Padding(
                       padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
@@ -131,12 +134,20 @@ class Home extends StatelessWidget {
                           fontWeight: FontWeight.w300,
                           color: Colors.white),
                     ),
-                    Container(
-                      height: 60,
-                      width: 60,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60),
-                          color: Colors.white),
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: Container(
+                        height: 60,
+                        width: 60,
+                        child: Icon(
+                          Icons.arrow_back,
+                          color: Colors.blue[900],
+                          size: 30,
+                        ),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(60),
+                            color: Colors.white),
+                      ),
                     )
                   ],
                 ),
