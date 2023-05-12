@@ -31,86 +31,113 @@ class Home extends StatelessWidget {
                     const SizedBox(
                       height: 20,
                     ),
-                    Stack(
-                      children: [
-                        Container(
-                            height: 300,
+                    Container(
+                      height: 350,
+                      width: Get.size.width,
+                      child: Stack(
+                        children: [
+                          Container(
+                            height: 200,
                             width: Get.size.width,
-                            child: Stack(
+                            color: Colors.blue[900],
+                            child: Column(
                               children: [
-                                Container(
-                                  height: 200,
-                                  width: Get.size.width,
-                                  color: Colors.blue[900],
-                                  child: Column(
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: const [
-                                          Padding(
-                                            padding: EdgeInsets.all(20.0),
-                                            child: Icon(
-                                              Icons.camera_alt_sharp,
-                                              size: 40,
-                                              color: Colors.white,
-                                            ),
-                                          )
-                                        ],
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: const [
+                                    Padding(
+                                      padding: EdgeInsets.all(20.0),
+                                      child: Icon(
+                                        Icons.camera_alt_sharp,
+                                        size: 40,
+                                        color: Colors.white,
                                       ),
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceAround,
-                                        children: const [
-                                          Icon(
-                                            Icons.edit,
-                                            size: 40,
-                                            color: Colors.white,
-                                          ),
-                                          Icon(
-                                            Icons.architecture,
-                                            size: 40,
-                                            color: Colors.white,
-                                          )
-                                        ],
-                                      )
-                                    ],
-                                  ),
+                                    )
+                                  ],
                                 ),
-                                Positioned(
-                                  bottom: 70,
-                                  right: 30,
-                                  left: 30,
-                                  child: Container(
-                                    height: 100,
-                                    width: 300,
-                                    color: Colors.blue[500],
-                                    child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceEvenly,
-                                        children: const [
-                                          Icon(
-                                            Icons.person,
-                                            color: Colors.white,
-                                            size: 30,
-                                          ),
-                                          Icon(
-                                            Icons.group,
-                                            color: Colors.white,
-                                            size: 40,
-                                          ),
-                                          Icon(
-                                            Icons.person,
-                                            color: Colors.white,
-                                            size: 30,
-                                          ),
-                                        ]),
-                                  ),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: const [
+                                    Icon(
+                                      Icons.edit,
+                                      size: 40,
+                                      color: Colors.white,
+                                    ),
+                                    Icon(
+                                      Icons.architecture,
+                                      size: 40,
+                                      color: Colors.white,
+                                    )
+                                  ],
                                 )
                               ],
-                            ))
-                      ],
+                            ),
+                          ),
+                          Positioned(
+                            bottom: 130,
+                            right: 30,
+                            left: 30,
+                            child: Container(
+                              height: 100,
+                              width: 300,
+                              color: Colors.blue[500],
+                              child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: const [
+                                    Icon(
+                                      Icons.face,
+                                      color: Colors.white,
+                                      size: 30,
+                                    ),
+                                    Icon(
+                                      Icons.groups,
+                                      color: Colors.white,
+                                      size: 40,
+                                    ),
+                                    Icon(
+                                      Icons.person,
+                                      color: Colors.white,
+                                      size: 30,
+                                    ),
+                                  ]),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
+                    const Text(
+                      "Community",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                      child: Text(
+                        "Hello this a basic ui design ",
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w300,
+                            color: Colors.white),
+                      ),
+                    ),
+                    const Text(
+                      "of the mpbile app ",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white),
+                    ),
+                    Container(
+                      height: 60,
+                      width: 60,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(60),
+                          color: Colors.white),
+                    )
                   ],
                 ),
               ),
