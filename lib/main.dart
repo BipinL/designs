@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:treeview/home.dart';
+import 'package:treeview/screen1.dart';
+import 'package:treeview/screen2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Home(),
+      home: const ScreenTwo(),
     );
   }
 }
